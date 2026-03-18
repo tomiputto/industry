@@ -74,6 +74,7 @@
 @media (max-width: 1024px) {
   .booklet__inner {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .booklet__text {
@@ -97,6 +98,8 @@
   }
 
   .booklet__image {
+    align-items: flex-start;
+    align-self: auto;
     padding: 0 var(--padding-mobile) 48px;
     justify-content: center;
   }
