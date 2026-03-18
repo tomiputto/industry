@@ -27,39 +27,6 @@
   margin-bottom: 80px;
 }
 
-.footer__social {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.footer__social-link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: -0.16px;
-  color: var(--white);
-  text-decoration: none;
-  white-space: nowrap;
-  transition: opacity 0.2s;
-}
-
-.footer__social-link:hover {
-  opacity: 0.8;
-}
-
-.footer__social-link img {
-  width: 12px;
-  height: 12px;
-  object-fit: contain;
-}
-
 .footer__divider {
   height: 1px;
   background: rgba(211, 227, 229, 0.3);
@@ -123,11 +90,6 @@
     font-size: 32px;
     line-height: 1.2;
     margin-bottom: 48px;
-  }
-
-  .footer__social {
-    gap: 24px;
-    margin-bottom: 32px;
   }
 
   .footer__bottom {
