@@ -1,0 +1,142 @@
+.footer {
+  background: var(--deep-blue);
+  padding: 80px 0;
+}
+
+.footer__inner {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--padding-desktop);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer__logo {
+  margin-bottom: 80px;
+  object-fit: contain;
+}
+
+.footer__tagline {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 54px;
+  line-height: 0.6;
+  letter-spacing: -1.62px;
+  color: var(--white);
+  margin-bottom: 80px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: -0.16px;
+  color: var(--white);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.footer__social-link:hover {
+  opacity: 0.8;
+}
+
+.footer__social-link img {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.footer__divider {
+  height: 1px;
+  background: rgba(211, 227, 229, 0.3);
+  margin-bottom: 40px;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer__copyright {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.16px;
+  color: var(--light-clay);
+  white-space: nowrap;
+}
+
+.footer__legal {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer__legal-link {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.16px;
+  color: var(--light-clay);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.footer__legal-link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 64px 0;
+  }
+
+  .footer__inner {
+    padding: 0 var(--padding-mobile);
+  }
+
+  .footer__logo {
+    margin-bottom: 48px;
+  }
+
+  .footer__tagline {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 48px;
+  }
+
+  .footer__social {
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer__legal {
+    gap: 16px;
+  }
+}

@@ -1,0 +1,93 @@
+/* Custom fonts */
+@font-face {
+  font-family: 'Messina Modern';
+  src: url('/fonts/MessinaModern-Book.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Messina Modern';
+  src: url('/fonts/MessinaModern-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cadiz';
+  src: url('/fonts/Cadiz-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cadiz';
+  src: url('/fonts/Cadiz-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Design tokens */
+:root {
+  --deep-blue: #0f3d51;
+  --gray-eminence: #647d83;
+  --blue-greyish: #92b1b8;
+  --light-clay: #d3e3e5;
+  --silver-planet: #f0f5f5;
+  --digital-blue: #00839f;
+  --salmon-byte: #ffa572;
+  --night-black: #262626;
+  --white: #ffffff;
+
+  /* Typography */
+  --font-heading: 'Messina Modern', Arial, sans-serif;
+  --font-body: 'Cadiz', Arial, sans-serif;
+
+  /* Spacing */
+  --page-max: 1680px;
+  --padding-desktop: 200px;
+  --padding-mobile: 20px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--deep-blue);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+input, textarea {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
