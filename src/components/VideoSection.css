@@ -1,5 +1,5 @@
 .video {
-  background: var(--deep-blue);
+  background: linear-gradient(to bottom, var(--deep-blue) 50%, #fff 50%);
   padding-bottom: 80px;
 }
 
