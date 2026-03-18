@@ -95,9 +95,13 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 16px;
     margin-right: calc(-1 * var(--padding-mobile));
     padding-right: var(--padding-mobile);
+    scrollbar-width: none;
+  }
+
+  .headlines__list::-webkit-scrollbar {
+    display: none;
   }
 
   .article-card {
