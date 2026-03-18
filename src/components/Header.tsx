@@ -53,18 +53,45 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile nav */}
+      {/* Mobile drawer */}
       {menuOpen && (
-        <nav className="header__mobile-nav">
-          {navItems.map((item) => (
-            <a key={item.label} href={item.href} className="header__mobile-nav-item" onClick={() => setMenuOpen(false)}>
-              {item.label}
+        <div className="header__drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+          <div className="header__drawer-top">
+            <a href="/" className="header__logo">
+              <img src={goforeLogo} alt="Gofore" width={106} height={18} />
             </a>
-          ))}
-          <a href="https://gofore.com" className="header__mobile-nav-item" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>
-            Gofore.com
-          </a>
-        </nav>
+            <button
+              className="header__close-btn"
+              aria-label="Close menu"
+              onClick={() => setMenuOpen(false)}
+            >
+              <span className="header__close-icon" />
+            </button>
+          </div>
+
+          <nav className="header__drawer-lang">
+            <a href="#" className="header__lang-item header__lang-item--muted">FI</a>
+            <a href="#" className="header__lang-item header__lang-item--active">EN</a>
+            <a href="#" className="header__lang-item header__lang-item--muted">DE</a>
+          </nav>
+
+          <nav className="header__drawer-nav">
+            {navItems.map((item) => (
+              <a key={item.label} href={item.href} className="header__drawer-item" onClick={() => setMenuOpen(false)}>
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="https://gofore.com"
+              className="header__drawer-item header__drawer-item--external"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gofore.com
+              <img src={arrowWhite} alt="" width={12} height={12} />
+            </a>
+          </nav>
+        </div>
       )}
     </header>
   )
