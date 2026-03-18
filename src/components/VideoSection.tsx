@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import videoPreview from '../../images/video-preview-screen.png'
 import iconPlay from '../../icons/icon-play.png'
+import { useLanguage } from '../i18n/LanguageContext'
 import './VideoSection.css'
 
 const YOUTUBE_ID = 'G4GiR3USDD0'
 
 export default function VideoSection() {
   const [playing, setPlaying] = useState(false)
+  const { t } = useLanguage()
 
   return (
     <section className="video" id="video">
@@ -29,7 +31,7 @@ export default function VideoSection() {
               />
               <button
                 className="video__play-btn"
-                aria-label="Play showreel"
+                aria-label={t('video.playLabel')}
                 onClick={() => setPlaying(true)}
               >
                 <img src={iconPlay} alt="" width={20} height={20} />

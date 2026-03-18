@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import contactPhoto from '../../images/viljakaisa.png'
+import { useLanguage } from '../i18n/LanguageContext'
 import './ContactForm.css'
 
 export default function ContactForm() {
   const [agreed, setAgreed] = useState(false)
+  const { t } = useLanguage()
 
   return (
     <section className="contact" id="contact">
@@ -26,34 +28,34 @@ export default function ContactForm() {
         <div className="contact__divider" />
 
         <div className="contact__form-area">
-          <h2 className="contact__heading">Please reach out, what can we do together?</h2>
+          <h2 className="contact__heading">{t('contact.heading')}</h2>
           <form className="contact__form" onSubmit={(e) => e.preventDefault()}>
             <div className="contact__row">
               <div className="contact__field">
-                <label className="contact__label">Firstname *</label>
+                <label className="contact__label">{t('contact.firstname')}</label>
                 <input type="text" className="contact__input" required />
               </div>
               <div className="contact__field">
-                <label className="contact__label">Lastname *</label>
+                <label className="contact__label">{t('contact.lastname')}</label>
                 <input type="text" className="contact__input" required />
               </div>
             </div>
             <div className="contact__row">
               <div className="contact__field">
-                <label className="contact__label">Email *</label>
+                <label className="contact__label">{t('contact.email')}</label>
                 <input type="email" className="contact__input" required />
               </div>
               <div className="contact__field">
-                <label className="contact__label">Phone</label>
+                <label className="contact__label">{t('contact.phone')}</label>
                 <input type="tel" className="contact__input" />
               </div>
             </div>
             <div className="contact__field contact__field--full">
-              <label className="contact__label">Company name</label>
+              <label className="contact__label">{t('contact.company')}</label>
               <input type="text" className="contact__input" />
             </div>
             <div className="contact__field contact__field--full">
-              <label className="contact__label">How could we help?</label>
+              <label className="contact__label">{t('contact.message')}</label>
               <textarea className="contact__textarea" rows={4} />
             </div>
             <div className="contact__checkbox-row">
@@ -65,16 +67,14 @@ export default function ContactForm() {
                   onChange={(e) => setAgreed(e.target.checked)}
                 />
                 <span className="contact__checkbox-box" />
-                <span>
-                  I give Gofore permission to process my data so they can respond to my inquiry. *
-                </span>
+                <span>{t('contact.checkbox')}</span>
               </label>
             </div>
             <p className="contact__privacy">
-              We promise to keep your data safe. Read more in our{' '}
-              <a href="#" className="contact__privacy-link">privacy policy</a>.
+              {t('contact.privacy')}{' '}
+              <a href="#" className="contact__privacy-link">{t('contact.privacyLink')}</a>.
             </p>
-            <button type="submit" className="contact__submit">Submit</button>
+            <button type="submit" className="contact__submit">{t('contact.submit')}</button>
           </form>
         </div>
       </div>
