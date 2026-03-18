@@ -189,6 +189,11 @@
     padding: 28px 20px;
   }
 
+  .header__separator,
+  .header__lang {
+    display: none;
+  }
+
   .header__nav {
     display: none;
   }
