@@ -35,7 +35,7 @@
 .service-card__title {
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5;
   color: var(--deep-blue);
 }
@@ -91,5 +91,9 @@
 
   .service-card {
     width: 100%;
+  }
+
+  .service-card__title {
+    font-size: 20px;
   }
 }
