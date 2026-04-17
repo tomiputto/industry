@@ -1,4 +1,4 @@
-import highlightImage from '../../icons/Highlight-Image.png'
+import highlightImage from '../../images/gofore-industry-booklet-figma.png'
 import { useLanguage } from '../i18n/LanguageContext'
 import './BookletSection.css'
 

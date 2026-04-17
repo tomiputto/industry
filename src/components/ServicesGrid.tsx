@@ -1,20 +1,15 @@
-import arrowBlue from '../../icons/arrow-blue.png'
-import iconWaterVoc from '../../icons/icon-water_voc.png'
 import iconPacemaker from '../../icons/icon-pacemaker.png'
 import iconRocket from '../../icons/icon-rocket.png'
-import iconLiftToTalk from '../../icons/icon-lift_to_talk.png'
 import iconWaterEc from '../../icons/icon-water_ec.png'
-import iconStethoscope from '../../icons/icon-stethoscope_check.png'
+import iconWaterVoc from '../../icons/icon-water_voc.png'
 import { useLanguage } from '../i18n/LanguageContext'
 import './ServicesGrid.css'
 
-const serviceIcons = [
-  iconWaterVoc,
-  iconPacemaker,
-  iconRocket,
-  iconLiftToTalk,
-  iconWaterEc,
-  iconStethoscope,
+const services = [
+  { icon: iconPacemaker, n: 1, bullets: ['b1', 'b2', 'b3', 'b4'] },
+  { icon: iconRocket,    n: 2, bullets: ['b1', 'b2', 'b3'] },
+  { icon: iconWaterEc,   n: 3, bullets: ['b1', 'b2', 'b3', 'b4'] },
+  { icon: iconWaterVoc,  n: 4, bullets: ['b1', 'b2', 'b3', 'b4'] },
 ]
 
 export default function ServicesGrid() {
@@ -24,20 +19,17 @@ export default function ServicesGrid() {
     <section className="services" id="services">
       <div className="services__inner">
         <div className="services__grid">
-          {serviceIcons.map((icon, i) => {
-            const n = i + 1
-            return (
-              <div key={n} className="service-card">
-                <img src={icon} alt="" className="service-card__icon" width={44} height={44} />
-                <h3 className="service-card__title">{t(`services.${n}.title`)}</h3>
-                <p className="service-card__desc">{t(`services.${n}.desc`)}</p>
-                <a href="#" className="service-card__link">
-                  {t('services.readMore')}
-                  <img src={arrowBlue} alt="" width={12} height={12} />
-                </a>
-              </div>
-            )
-          })}
+          {services.map(({ icon, n, bullets }) => (
+            <div key={n} className="service-card">
+              <img src={icon} alt="" className="service-card__icon" width={44} height={44} />
+              <h3 className="service-card__title">{t(`services.${n}.title`)}</h3>
+              <ul className="service-card__list">
+                {bullets.map((b) => (
+                  <li key={b}>{t(`services.${n}.${b}`)}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>
