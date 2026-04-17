@@ -30,7 +30,7 @@
 .service-card {
   background: #fff;
   border: 1px solid var(--light-clay);
-  padding: 24px;
+  padding: 36px;
   display: flex;
   flex-direction: column;
   gap: 24px;
