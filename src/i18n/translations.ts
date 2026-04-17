@@ -24,6 +24,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'strategy.body': 'We help organizations design and deliver advanced digital products, services, and systems. From early concepts to production, we turn complexity into clarity and measurable impact. Explore our core offering to accelerate your business.',
 
     // Services
+    'services.heading': 'Our approach to industrial solutions',
     'services.1.title': 'Make Data Work for People',
     'services.1.b1': 'Make data actionable at every level',
     'services.1.b2': 'Align systems with real workflows',
@@ -105,6 +106,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'strategy.body': 'Autamme organisaatioita suunnittelemaan ja toimittamaan edistyneitä digitaalisia tuotteita, palveluita ja järjestelmiä. Varhaisista konsepteista tuotantoon – muutamme monimutkaisuuden selkeydeksi ja mitattavaksi vaikutukseksi. Tutustu ydinpalveluihimme liiketoimintasi kiihdyttämiseksi.',
 
     // Services
+    'services.heading': 'Lähestymistapamme teollisiin ratkaisuihin',
     'services.1.title': 'Tee datasta toimivaa ihmisille',
     'services.1.b1': 'Tee datasta käytännöllistä jokaisella tasolla',
     'services.1.b2': 'Sovita järjestelmät todellisiin työnkulkuihin',
@@ -186,6 +188,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'strategy.body': 'Wir helfen Organisationen dabei, fortschrittliche digitale Produkte, Dienstleistungen und Systeme zu gestalten und zu liefern. Von frühen Konzepten bis zur Produktion – wir machen aus Komplexität Klarheit und messbaren Nutzen. Entdecken Sie unser Kernangebot, um Ihr Unternehmen zu beschleunigen.',
 
     // Services
+    'services.heading': 'Unser Ansatz für industrielle Lösungen',
     'services.1.title': 'Daten für Menschen nutzbar machen',
     'services.1.b1': 'Daten auf jeder Ebene handlungsfähig machen',
     'services.1.b2': 'Systeme mit echten Arbeitsabläufen in Einklang bringen',

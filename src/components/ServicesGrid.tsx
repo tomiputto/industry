@@ -18,6 +18,7 @@ export default function ServicesGrid() {
   return (
     <section className="services" id="services">
       <div className="services__inner">
+        <h2 className="services__heading">{t('services.heading')}</h2>
         <div className="services__grid">
           {services.map(({ icon, n, bullets }) => (
             <div key={n} className="service-card">

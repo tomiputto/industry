@@ -9,6 +9,18 @@
   padding: 0 var(--padding-desktop);
 }
 
+.services__heading {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.64px;
+  color: var(--deep-blue);
+  margin-top: 32px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
 .services__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
