@@ -1,3 +1,4 @@
+import iconPacemaker from '../../images/icon-pacemaker 1.png'
 import { useLanguage } from '../i18n/LanguageContext'
 import './Hero.css'
 
@@ -15,7 +16,10 @@ export default function Hero() {
           <p className="hero__body">{t('hero.body')}</p>
         </div>
         <div className="hero__cta">
-          <p className="hero__cta-text">{t('hero.ctaText')}</p>
+          <div className="hero__cta-left">
+            <img src={iconPacemaker} alt="" className="hero__cta-icon" width={32} height={32} />
+            <p className="hero__cta-text">{t('hero.ctaText')}</p>
+          </div>
           <a href="#booklet" className="hero__cta-btn">{t('hero.ctaBtn')}</a>
         </div>
       </div>

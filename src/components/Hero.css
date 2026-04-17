@@ -63,6 +63,19 @@
   gap: 32px;
 }
 
+.hero__cta-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__cta-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 .hero__cta-text {
   font-family: var(--font-body);
   font-weight: 400;
